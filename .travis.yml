@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+  - "4.4.5"
+before_install:
+  - echo "before_install"
+install:
+  - echo "install"
+script:
+  - echo "before_install"
+before_deploy:
+  - echo "before_deploy"
+deploy:
+  - echo "deploy"
+after_deploy:
+  - echo "after_deploy"
