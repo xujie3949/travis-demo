@@ -6,7 +6,7 @@ before_install:
 install:
 - echo "install"
 script:
-- echo "before_install"
+- echo "script"
 before_deploy:
 - echo "before_deploy"
 deploy:
