@@ -11,8 +11,7 @@ before_deploy:
 - echo "before_deploy"
 deploy:
   provider: releases
-  api_key:
-    secure: qTFcK7ZisL6nr4s3J7TcTB/bjeUMrHWYFue3jIsx++Twbv86AxmCTrzUqQKyFniuH+tch5e8QYftrsli3vEyUjq7cyp3QZjVnSPU15mnv5tblqDvXgs19mIERiuC9wHCk0HocQ6ULkDPhF+Hkg8CEldaa/T7oT311SkvnC0qpwKQqjylaG+VLImElhtcH96yZ+E/gj6gmOTPhnMoIDhWxa+fTGh7d1OsQovXQhsQaobYah6CVcZ81q3q3V39yX9UWg9ynaHdhh7deN/cET3APctZ2JBsJAwXQNj4ZK1iZfEgl91Td1NTVDmQ8Gt9X3WKT6ThDL5tRRoQIPWVqFfK6XrWM/iQBXW0MT8U6h2IhpxKnTmYXvPYq/PmceqsyDeqdkqt+P8AAOpJxhA2tNEGhgF9/poE9nh1hsMyg/SEvhLJF222DRKGCmIPJqc46Yp71nRw6UlgTMODxOjrQVZA+uBMV30AtUgrmztvhzXQSSw81N0C7xQ5HjL/DCXY8LbQXTnfJyjau5uh7TPJDywdtp+sSLLcb672WHa7EMFPG8jbESP7G2LP8cYOo7cUkPEDwe/wxyU4umUGgCyOvgE/LXJ+SPkr1N4DVYU8lnPLqHFPeBm051t9B9Yu9U1LcSHUtggupwqkgr2GRgqDkEn9Gu9h9nAZ3P16Rjs3bI6dvtA=
+  api_key: $GITHUB_TOKEN
   file_glob: true
   file: dir/*
   on:
